@@ -10,6 +10,10 @@ router.get('/add/:a/:b', (ctx, next) => {
   return ctx.body = { result };
 });
 
+router.get('/servex/:m', (ctx, next) => {
+  return ctx.body = { result: ctx.params.m };
+});
+
 router.get('/saludar/:m', (ctx, next) => {
   return ctx.body = { result: ctx.params.m };
 });
